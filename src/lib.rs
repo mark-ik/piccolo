@@ -5,6 +5,7 @@ pub mod closure;
 pub mod compiler;
 pub mod constant;
 pub mod conversion;
+pub mod deferred;
 pub mod error;
 pub mod finalizers;
 pub mod fuel;
@@ -30,6 +31,7 @@ pub use self::{
     closure::{Closure, CompilerError, FunctionPrototype},
     constant::Constant,
     conversion::{FromMultiValue, FromValue, IntoMultiValue, IntoValue, Variadic},
+    deferred::Deferred,
     error::{Error, ExternError, RuntimeError, TypeError},
     fuel::Fuel,
     function::Function,
